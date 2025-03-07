@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0 0;
+}
+
+body {
+    position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #0E2431;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem 3rem;
+    box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    background-color: white;
+    font-weight: bolder;
+}
+
+header h1 {}
+
+header h1,
+header a {
+    color: #0E2431;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+    text-decoration-color: #4070f4;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 3px;
+}
+
+header nav {
+    display: flex;
+    gap: 1rem;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 50px);
+}
+
+section h2 {
+    color: #4070f4;
+    text-decoration: underline;
+    text-decoration-color: #4070f4;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 3px;
+    text-align: center;
+    font-size: 2rem;
+    margin: 2rem 0;
+}
+
+section h3 {
+    font-size: 1.75rem;
+    margin: 1.5rem 0;
+}
+
+#home {
+    gap: 5rem;
+}
+
+#home h1 {
+    margin-bottom: 1rem;
+}
+
+#home h1>span {
+    display: block;
+    font-size: 4rem;
+}
+
+#name {
+    color: #4070f4;
+}
+
+section button {
+    background-color: #4070f4;
+    border-radius: 0.5em;
+    padding: 0.75em 1.75em;
+    border: 1px solid #4070f4;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+#home button a {
+    color: white;
+    text-decoration: none;
+}
+
+#img-div > div {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 8px 8px;
+    border: 2px solid #4070f4;
+}
+
+#img-div img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+#about {}
+
+#about-content {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+#about-content img {
+    height: 400px;
+    width: 300px;
+    border-radius: 2rem;
+}
+
+#about-content>div {
+    width: 400px;
+}
+#skills-content {
+    display: flex;
+    gap: 7rem;
+    align-items: flex-end;
+}
+#skills-content p {
+    line-height: 1.5;
+}
+#skills-content img {
+    width: 400px;
+    height: 300px;
+    border-radius: 1rem;
+}
+#skills-content > div {
+    width: 400px;
+}
+#skill-bars{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#skills-content .bar {
+    position: relative;
+    box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.2);
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+}
+
+#skills-content .bar-content {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bolder;
+}
+
+.percent-bar {
+    position: absolute;
+    bottom: 0;
+    left: 2px;
+    background-color: #4070f4;
+    height: 4px;
+    border-radius: 1rem;
+    /* width: 100%; */
+}
+.percent-bar.ten {
+    width: 10%;
+}
+.percent-bar.seventy {
+    width: 70%;
+}
+.percent-bar.eighty {
+    width: 80%;
+}
+.percent-bar.ninety {
+    width: 90%;
+}
+#works{
+    
+}
+#work-img {
+    text-align: center;
+}
+#work-img > div {
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    height: 220px;
+    margin: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.2);
+}
+#work-img > div:hover img {
+    transform: scale(1.25);
+}
+#work-img > div img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    transition: transform 1s;
+}
+#contact form {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+#contact form input, #contact form textarea
+{
+    border: 2px solid black;
+    padding: 1rem;
+    border-radius: 0.5;
+    font-size: 1rem;
+    font-weight: 900;
+    
+}
+#contact form textarea{
+    height: 200px;
+}
+#contact form > div {
+    text-align: right;
+}
+#contact form button{
+    display: inline-block;
+    color: white;
+    cursor: pointer;
+}
+#contact form button:hover{
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+}
+footer{
+    background-color: #0E2431;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+footer h4
+{
+    font-size: 2.5rem;
+}
+footer #social-links {
+    margin: 2rem 0;
+}
+footer #social-links a {
+    color: white;
+    padding: 0.5rem 0.5rem;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+}
+footer #social-links a:hover {
+    background-color: white;
+    color: black;
+}
+footer p{
+    font-weight: 900; 
+}
+@media screen and (max-width: 940px) {
+    #home h1 > span {
+    font-size: 3rem; 
+    }
+
+    #img-div>div{
+        width: 200px;
+        height: 200px;}
+        #skills-content{
+            flex-direction: column-reverse;
+            gap: 3rem;
+            justify-content: space-around;
+            align-items: center;
+        }
+    }
+    #about-content{
+        gap: 1rem;
+        flex-direction: column;
+    }
+@media screen and (max-width: 568px){
+   header { padding: 1rem 1rem;}
+    #img-div > div {
+          padding: 4px 4px;}
+    #home {
+    flex-direction: column-reverse;
+    gap:2rem;
+     }
+}
+@media screen and (max-width:436px) {
+    #home h1> span {
+        font-size: 2rem;
+    }
+    #about-content img {
+        height: 100%;
+        width: 250px;
+        border-radius: 2rem;
+    }
+    
+}

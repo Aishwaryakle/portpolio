@@ -1,0 +1,112 @@
+header {
+    background-color: rgb(232, 122, 247);
+}
+
+.container {
+    border: 1px solid gray;
+    text-align: center;
+    padding: 3rem 3rem;
+}
+
+#box {
+    height: 400px;
+    width: 400px;
+    border: 1 px solid black;
+    /*box-shadow: Xaxis yaxis blurRadius shadowRadius shadowColor*/
+    /*box-shadow:10px 10px 20px gray*/
+    box-shadow: inset 10px 10px 20px 10px gray;
+    /* border-radius:leftTop rightTop rightBottom leftBottom */
+    border-radius: 10px 50% 50% 0;
+    /*  border-radius: 50;*/
+}
+
+#redbox,
+#bluebox {
+    hight: 50px;
+    width: 50px;
+
+}
+
+#redbox {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(192, 73, 73);
+
+}
+
+#bluebox {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+}
+
+h1 {
+    color: blue;
+    text-align: end;
+}
+
+#redbox:hover,
+#bluebox:hover {
+    width: 300px;
+}
+
+#bluebox {
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    transition: background-color 2s;
+    transition: width 1s;
+}
+
+#blackbox {
+    background-color: black;
+    height: 100px;
+    width: 100px;
+    transition: background-color 2s;
+    transition: width 1s;
+}
+
+#blackbox:hover {
+    background-color: rgb(66, 32, 32);
+    width: 500px;
+    border-radius: 5rem;
+}
+
+/*on black box hover h1 color will change */
+#backbox:hover h1 {
+    color: rgb(3, 2, 3);
+
+}
+
+#rolling-ball {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    box-shadow: inset 5px 10px 5px 5px white;
+    border: 1px solid red;
+    transition: border-radius 1s, transform 1s;
+}
+
+.container:hover #rolling-ball {
+    border-radius: 50%;
+    transform: rotate(360deg);
+}
+#moving-box{
+    height: 60px;
+    width: 100px;
+    background-color: gray;
+}
+.container:hover #moving-box
+{
+   transform:translateX(200px);
+}
+#scale-box{
+    height:100px ;
+    width:100px;
+    background-color:rgb(231, 164, 175) ;
+    transition:transform 1s ;
+}
+.container:hover #scale-box {
+    transform: scale(0.6);
+
+}

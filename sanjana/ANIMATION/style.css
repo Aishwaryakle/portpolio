@@ -1,0 +1,56 @@
+*{
+    margin: 10;
+    padding: 0 0;
+
+}
+header{
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+}
+header h1{
+     color: white;
+}
+.container{
+    margin-top: 50px;
+    border: 2px solid black;
+    
+}
+#always-moving-box {
+    height:50px;
+    width:50px ;
+    background-color: brown;
+    color: white;
+}
+   .container:hover #always-moving-box {
+    animation: moveforward 1s 1s infinite;
+   }
+    @keyframes moveForward{
+        {transform: translate(0);}
+    }
+        
+    #ball {
+        height:50px;
+        width: 50px;
+        text-align: center;
+        background-color: red;
+        color: white;
+        border: 1px solid rgb(blue,red,green);
+        border-radius: 50%;
+        box-shadow: inset 2px 2px 5px 2px white;
+    }
+    .container:hover #ball {
+        animation: roll 2s;
+    } 
+    @keyframes roll { 
+        0%{
+            transform: rotate(0deg) translateX(0);
+        }
+        100%{
+            transform: translateX(600px) rotate(360deg);
+        }
+        }
+    
+    
+   
